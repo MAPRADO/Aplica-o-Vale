@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index, follow">
+		<title>Teste Valemobi</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../css/teste.css">
+	</head>
+
+	<body>
+		<header class="cabecalho">
+			<a href="index.html"><h1 class="logo">Valemobi</h1></a>
+
+			<article class="formulario">
+				<h2 class="titulo">Plataforma de Negociação<p>Mercadorias</p></h2>
+				<form name="campos" action="">
+					<input type="text" name="cod" class="cod" placeholder="Código da Mercadoria">
+					</br>
+					<input type="text" name="tipo" class="tipo" placeholder="Tipo da Mercadoria">
+					</br>
+					<input type="text" name="nome" class="nome" placeholder="Nome da Mercadoria">
+					</br>
+					<input type="number" name="quant" class="quant" placeholder="Quantidade">
+					</br>
+					<input type="text" name="preço" class="preço" placeholder="Preço">
+					</br>
+					</br>
+					</br>
+					<label>
+			  			<span class="subtitulo">Tipo de Negócio</span>
+			  			</br>
+			  			</br>
+			  			<input type="radio" name="negocio" checked/>
+			  			<span>Compra</span>
+			  			<input type="radio" name="negocio"/>
+			  			<span>Venda</span>
+			  		</label>
+					</br> 
+				</form>
+				<button class="botao-enviar">Enviar</button>
+			</article>
+
+			<nav class="menu">
+				<a class="botao-fecha">x</a>
+				<h2 class="lista">Lista de Operações</h2>
+				<label>
+			  		<span>Empresa</span>
+			  		<select>
+			  			<option>Selecione</opition>
+			  			<option>Ambev</opition>
+			  			<option>BRF</opition>
+			  			<option>Bunge</opition>
+			  			<option>Cargill</opition>
+			  			<option>CSN</opition>
+			  			<option>Embraer</opition>
+			  			<option>Gerdau</opition>
+			  			<option>GPA</opition>
+			  			<option>Samsung</opition>
+			  		</select>
+		  		</label>
+		  		<form>
+		  			<button class="confirma">Confirmar</button>
+		  		</form> 		
+			</nav>
+
+		</header>
+	
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+		$(".botao-enviar").click(function(){
+			$(".menu").show();
+		});
+		$(".botao-fecha").click(function(){
+			$(".menu").hide();
+		});
+	</script>
+
+	</body>
+
+
+<!-- Estrutura para o teste Valemobi - 2016 / Marcio A. Prado -->
+
+	
+</html>
